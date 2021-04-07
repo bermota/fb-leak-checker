@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>O meu número de telefone está nos Leaks do Facebook?</h1>
+<h2>Indica-o aqui para verificar:</h2>
+
+<form action="https://web2.tecnico.ulisboa.pt/ist193693/fb-leak-checker/app.cgi/search" method="POST">
+  <input class="input" type="tel" id="phone" name="phone" placeholder="ex: 912345678" pattern="[0-9]{9}" required><br><br>
+  <button type="submit" value="Submit">Pesquisar</button>
+</form>
+
+<p>
+Contacto: Bernardo Mota <a href="mailto:bernardo.mota@tecnico.ulisboa.pt">bernardo.mota@tecnico.ulisboa.pt</a> (aluno de informática no IST).<br>
+Este site não recolhe dados nem regista logs, o seu código fonte está disponível neste <a href="https://github.com/bermota/fb-leak-checker">repositório</a>.
+</p>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+    <title>FB Leak Checker</title>
+  <meta name="description" content="Este site verifica se um número de telefone português está presente no leak.">
+  <style>
+    body {
+        line-height: 1.4;
+        font-family: sans-serif;
+        padding: 5%;
+    }
+    input, button{
+      font-size: 1.5rem;
+      padding: 1rem;
+      margin: 5%;
+    }
+</style>
+  </head>
+  <body>
+    {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+
+{% block content %}{% endblock %}
+
+{% endwith %}
+
+
+  
+  </body>
+</html>
