@@ -56,8 +56,8 @@ def search():
 
 
 
-# For development purposes we do not use CGI
-if __name__ == '__main__':
-    app.run(debug=True)
+# # For development purposes we do not use CGI
+# if __name__ == '__main__':
+#     app.run(debug=True)
 
 CGIHandler().run(app)
